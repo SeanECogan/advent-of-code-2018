@@ -4,7 +4,8 @@
   "description": "Solutions to the 2018 Advent of Code challenge.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist --copy-files",
+    "start": "npm run-script build && node ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/SeanECogan/advent-of-code-2018/issues"
   },
-  "homepage": "https://github.com/SeanECogan/advent-of-code-2018#readme"
+  "homepage": "https://github.com/SeanECogan/advent-of-code-2018#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
+  }
 }
