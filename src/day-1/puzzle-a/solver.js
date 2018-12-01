@@ -3,16 +3,20 @@
 import fs from 'fs';
 
 const solver = {
-    calculateFrequency: function () {
+    solve: function() {
         const fileContents = fs.readFileSync(`${__dirname}/input.txt`, 'utf8');
 
         const frequencyChanges = fileContents
             .split(/\r?\n/)
             .map(line => +line);
 
-        const resultingFrequency = frequencyChanges.reduce((prev, curr) => prev + curr, 0);
+        const resultingFrequency = this.calculateFinalFrequency(frequencyChanges);
 
         console.log(`Resulting frequency is: ${resultingFrequency}.`);
+    },
+
+    calculateFinalFrequency: function (frequencyChanges) {        
+        return frequencyChanges.reduce((prev, curr) => prev + curr, 0);
     }
 }
 

@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "babel src --out-dir dist --copy-files",
+    "test": "npm run-script build && mocha \"dist/**/*.spec.js\"",
     "start": "npm run-script build && node ./dist/app.js"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6"
+    "@babel/preset-env": "^7.1.6",
+    "mocha": "^5.2.0"
   }
 }
