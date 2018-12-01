@@ -1,0 +1,19 @@
+{
+  "name": "advent-of-code-2018",
+  "version": "1.0.0",
+  "description": "Solutions to the 2018 Advent of Code challenge.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanECogan/advent-of-code-2018.git"
+  },
+  "author": "Sean Cogan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeanECogan/advent-of-code-2018/issues"
+  },
+  "homepage": "https://github.com/SeanECogan/advent-of-code-2018#readme"
+}
