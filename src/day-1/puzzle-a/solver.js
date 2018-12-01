@@ -2,11 +2,11 @@
 
 import fs from 'fs';
 
-let solver = {
+const solver = {
     calculateFrequency: function () {
-        let fileContents = fs.readFileSync(`${__dirname}/input.txt`, 'utf8');
+        const fileContents = fs.readFileSync(`${__dirname}/input.txt`, 'utf8');
 
-        let frequencyChanges = fileContents
+        const frequencyChanges = fileContents
             .split(/\r?\n/)
             .map(line => +line);
 

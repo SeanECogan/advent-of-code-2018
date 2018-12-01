@@ -1,11 +1,11 @@
 'use strict';
 
-import solver from './day-1/puzzle-a/solver';
+import solver from './day-1/puzzle-b/solver';
 
 (function () {
     let startTime = new Date();
 
-    solver.calculateFrequency();
+    solver.solve();
 
     let endTime = new Date();
 
