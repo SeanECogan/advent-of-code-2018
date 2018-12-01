@@ -20,18 +20,20 @@ const solver = {
 
         let currentIndex = 0;
         let foundDuplicateFrequency = false;
-        let previousFrequencies = [0];
+        let previousFrequency = 0;
+        let previousFrequencies = { 0: true };
         let duplicateFrequency = 0;
 
         while (!foundDuplicateFrequency) {         
             const newFrequency = 
-                previousFrequencies[currentIndex] + frequencyChanges[currentIndex % totalChanges];
+                previousFrequency + frequencyChanges[currentIndex % totalChanges];
 
-            if (previousFrequencies.some((value) => value === newFrequency)) {
+            if (previousFrequencies[newFrequency]) {
                 duplicateFrequency = newFrequency;
                 foundDuplicateFrequency = true;
             } else {
-                previousFrequencies.push(newFrequency);
+                previousFrequencies[newFrequency] = true;
+                previousFrequency = newFrequency;
                 currentIndex++;
             }
         }
