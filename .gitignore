@@ -1,6 +1,9 @@
 # Built files
 dist
 
+# Local settings
+.vscode
+
 # Logs
 logs
 *.log
