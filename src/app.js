@@ -1,6 +1,6 @@
 'use strict';
 
-import solver from './day-1/puzzle-b/solver';
+import solver from './day-2/puzzle-b/solver';
 
 (function () {
     let startTime = new Date();
