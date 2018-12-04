@@ -4,7 +4,7 @@ import fs from 'fs';
 
 const solver = {
     solve: function() {
-        const fileContents = fs.readFileSync(`${__dirname}/input.txt`, 'utf8');
+        const fileContents = fs.readFileSync(`${__dirname}/../input.txt`, 'utf8');
 
         const frequencyChanges = fileContents
             .split(/\r?\n/)
